@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>PowerGrid-Rx Fault Tools</title>
+      <link rel="stylesheet" href="css/w3.css">
+    </head>
+    <body>
+      <script language="javascript" src="js/faultcalcs.js"> </script>
+      <script language="javascript" src="js/nav.js"> </script>
+
+    <div class="w3-container w3-blue">
+        <h1>PowerGrid-Rx Fault Tools</h1>
+    </div>
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Fault Calculator</a>
+      <a href="polarconversion.html" onclick="w3_close()" class="w3-bar-item w3-button">Polar Conversion</a>
+      <a href="rectconversion.html" onclick="w3_close()" class="w3-bar-item w3-button">Rectangular Conversion</a>
+
+
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+      <div class="w3-blue w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">PowerGrid-Rx Fault Tools</div>
+      </div>
+    </div>
+
+    <div class="w3-container">
+      <!-- body -->
+      Rectangular -> Polar Convertor
+      <form>
+      <table>
+          <TR>
+              <TD>Real:</TD>
+              <TD><input type="number" id="re"></TD>
+          </TR>
+          <TR>
+              <TD>Imaginary: </TD>
+              <TD><input type="number" id="im"></TD>
+          </TR>
+      </table>
+      <input type="button" onclick="javascript:convertrecttopol();" value="Rectangular -> Polar">
+      <input type="reset" value="Clear">
+      <p>
+
+      </form>
+      <div id="results"></div>
+    </div>
+
+
+    <footer class="w3-container w3-center w3-blue">
+      <table width="100%">
+            <TR>
+                <TD align="left"><a href="http://www.powergrid-rx.com">PowerGrid-Rx</a></TD>
+                <TD align="right"><a href="about.html">About</a></TD>
+            </TR>
+      </table>
+    </footer>
+
+
+
+
+
+
+    </body>
+</html>
